@@ -1,7 +1,5 @@
 # Telco Customer Churn Prediction / Прогнозирование оттока клиентов Telco
-
-## 🔤 Перевод колонок  
-
+  
 | Колонка            | Перевод |
 |---------------------|---------|
 | `customerID`        | Идентификатор клиента |
@@ -28,16 +26,16 @@
 
 ---
 
-## 📖 Описание датасета / Dataset Description
+## Описание датасета / Dataset Description
 
 Датасет содержит информацию о **7043 клиентах телекоммуникационной компании**.  
 Задача — **предсказать вероятность оттока клиентов** (`Churn`) на основе демографических данных, типа контракта, предоставляемых услуг и расходов клиента.  
 
 The dataset contains information about 7043 customers of a telecom company.
 The goal is to predict customer churn probability (Churn) based on demographics, contract type, provided services, and customer expenses.
----
 
-## 🎯 Цели проекта / Project Goals
+
+##  Цели проекта / Project Goals
 
 - Выполнить исследовательский анализ данных (EDA)  
 - Подготовить данные для моделей (очистка, кодирование категориальных признаков, масштабирование числовых)  
@@ -52,7 +50,7 @@ The goal is to predict customer churn probability (Churn) based on demographics,
 - Develop an application to demonstrate the model
 ---
 
-## 🛠️ Используемый стек / Tech Stack
+## Используемый стек / Tech Stack
 
 - **Python** 3.12
 - **pandas, numpy** — работа с данными / data processing
@@ -64,7 +62,7 @@ The goal is to predict customer churn probability (Churn) based on demographics,
 
 ---
 
-## 📌 Структура проекта / Project Structure
+## Структура проекта / Project Structure
 
 ```bash
 │
@@ -105,7 +103,7 @@ The goal is to predict customer churn probability (Churn) based on demographics,
 
 ---
 
-## 📂 Описание файлов  
+## Описание файлов  
 
 ### 🔹 `app/`  
 - **main.py** — точка входа для запуска приложения.  
@@ -139,7 +137,7 @@ The goal is to predict customer churn probability (Churn) based on demographics,
 
 ---
 
-## 🚀 Запуск проекта / Run the Project
+## Запуск проекта / Run the Project
 
 1. Установить зависимости / Install dependencies:  
 ```bash
@@ -160,7 +158,7 @@ pyinstaller TelcoApp.spec
 
 
 
-## ⚙️ Установка и запуск / Installation & Usage
+## Установка и запуск / Installation & Usage
 
 
 1. Клонировать репозиторий:
@@ -182,7 +180,7 @@ pyinstaller TelcoApp.spec
    ```
 
 
-## 🔮 Результаты 
+## Результаты 
 - Лучшая модель: **Random Forest** с ROC-AUC ≈ 0.84.  
 - Все визуализации сохранены в `reports/figures/`.  
 - GUI-приложение позволяет вручную вводить данные клиента и предсказывать вероятность его оттока.  
@@ -191,4 +189,4 @@ pyinstaller TelcoApp.spec
 
 ## 👤 Автор 
 **Lim Arthur Sergeyevich**  
-📌 PROWEB Data Science (Group № 1190)
+
