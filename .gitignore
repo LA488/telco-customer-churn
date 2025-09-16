@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Data (не загружаем сырые и обработанные данные)
+data/raw/*
+data/processed/*
+
+# Models (модели слишком тяжелые)
+models/*.pkl
+
+# Build (результат сборки exe)
+app/build/
+app/dist/
+
+# Virtual env
+venv/
+.env/
