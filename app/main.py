@@ -8,7 +8,6 @@ import ttkbootstrap as tb
 from ttkbootstrap.constants import *
 
 
-# --- Пути ---
 def resource_path(relative_path: str) -> str:
     """
     Возвращает абсолютный путь как при обычном запуске,
@@ -55,7 +54,7 @@ class TelcoChurnApp:
         else:
             self.status_var.set(f"⚠ Модель не найдена: {MODEL_PATH}")
 
-    # --- дальше твой код без изменений ---
+
     def create_personal_section(self):
         frame = tb.LabelFrame(self.root, text="Личные данные", bootstyle=PRIMARY)
         frame.pack(fill="x", padx=10, pady=5)
@@ -101,7 +100,8 @@ class TelcoChurnApp:
         for i, feature in enumerate(service_features):
             var = tb.BooleanVar(value=False)
             self.vars[feature] = var
-            tb.Checkbutton(frame, text=feature, variable=var).grid(row=i // 3, column=i % 3, sticky="w", padx=10, pady=2)
+            tb.Checkbutton(frame, text=feature, variable=var).grid(row=i // 3, column=i % 3, sticky="w",
+                                                                   padx=10, pady=2)
 
     def create_payment_section(self):
         frame = tb.LabelFrame(self.root, text="Оплата", bootstyle=WARNING)

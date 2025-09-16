@@ -163,7 +163,7 @@ pyinstaller TelcoApp.spec
 
 1. Клонировать репозиторий:
    ```bash
-   git clone https://github.com/username/telco-churn.git
+   git clone https://github.com/LA488/telco-customer-churn.git
    cd telco-churn
    ```
 2. Установить зависимости:
@@ -178,7 +178,6 @@ pyinstaller TelcoApp.spec
    ```bash
    python app/main.py
    ```
-
 
 ## Результаты 
 - Лучшая модель: **Random Forest** с ROC-AUC ≈ 0.84.  

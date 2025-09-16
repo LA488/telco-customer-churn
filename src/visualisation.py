@@ -20,7 +20,7 @@ def plot_metrics_bar(df_metrics: pd.DataFrame, save_path="reports/figures/model_
     df = df_metrics.reset_index().melt(id_vars='model', var_name='metric', value_name='value')
     plt.figure(figsize=(10, 6))
     sns.barplot(x='model', y='value', hue='metric', data=df)
-    plt.ylim(0,1)
+    plt.ylim(0, 1)
     plt.title("Сравнение метрик моделей")
     plt.legend(loc='lower right')
     plt.tight_layout()
@@ -31,7 +31,7 @@ def plot_metrics_bar(df_metrics: pd.DataFrame, save_path="reports/figures/model_
 def plot_roc_curves(results: dict, X_test, y_test, save_path="reports/figures/roc_curves.png"):
     """Строит ROC-кривые для всех моделей (если есть predict_proba)."""
     os.makedirs(os.path.dirname(save_path), exist_ok=True)
-    plt.figure(figsize=(8,6))
+    plt.figure(figsize=(8, 6))
     for name, metrics in results.items():
         y_proba = metrics.get('y_proba', None)
         if y_proba is None:
