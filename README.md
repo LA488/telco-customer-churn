@@ -188,5 +188,5 @@ pyinstaller TelcoApp.spec
 ---
 
 ## 👤 Автор 
-**Lim Arthur Sergeyevich**  
+### Lim Arthur Sergeyevich
 
